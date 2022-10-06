@@ -13,6 +13,7 @@ import os
 import sys
 import time
 from platform import python_version as pyver
+from pyrogram import __version__ as pyro
 from random import choice
 
 from telethon import __version__
@@ -82,6 +83,7 @@ The Ultroid Userbot
   ◍ Version - {}
   ◍ Py-Ultroid - {}
   ◍ Telethon - {}
+  ◍ Pyrogram - {}
 """
 
 in_alive = "{}\n\n🌀 <b>Ultroid Version -><b> <code>{}</code>\n🌀 <b>PyUltroid -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b> [ {} ]\n\n• <b>Join @TeamUltroid</b>"
@@ -127,6 +129,7 @@ async def lol(ult):
             pyver(),
             uptime,
             kk,
+            pyro,
         )
 
         if _e := udB.get_key("ALIVE_EMOJI"):
@@ -142,6 +145,7 @@ async def lol(ult):
             pyver(),
             __version__,
             kk,
+            pyro,
         )
 
         if a := udB.get_key("ALIVE_EMOJI"):
