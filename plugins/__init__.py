@@ -64,6 +64,7 @@ NOSPAM_CHAT = [
     -1001050982793,  # Python
     -1001256902287,  # DurovsChat
     -1001473548283,  # SharingUserbot
+    -1001235155926,  # Rose Support
 ]
 
 KANGING_STR = [
